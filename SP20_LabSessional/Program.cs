@@ -13,6 +13,7 @@ namespace SP20_LabSessional
         static void Main(string[] args)
         {
             CreateFacultyObjects();
+
             foreach (var item in faculties)
             {
                 Console.WriteLine(item);
