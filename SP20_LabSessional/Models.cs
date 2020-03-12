@@ -9,8 +9,6 @@ namespace SP20_LabSessional
     class Faculty
     {
         public string Name { get; set; }
-        // TODO:
-        // Convert Designation from string to enumerator having designations: Lecturer, AssistantProfessor, AssociateProfessor, Professor
         public string Designation { get; set; }
         public string Department { get; set; }
         public string ContactNo { get; set; }
@@ -40,8 +38,6 @@ namespace SP20_LabSessional
     class Address
     {
         public string StreetAddress { get; set; }
-        // TODO:
-        // Convert City from string to enumerator having at least 6 Cities
         public string City { get; set; }
         public string District { get; set; }
         public string Country { get; set; }

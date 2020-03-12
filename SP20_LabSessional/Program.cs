@@ -20,10 +20,14 @@ namespace SP20_LabSessional
             }
 
             /* TODO:
-             * 1. Display a list of faculty members working in 'Management Sciences' Department
-             * 2. Display a list of faculty members whose permanent address city is not Islamabad
-             * 3. Implement > operator in Faculty Class based on Designation
-             * 4. Implement indexer to return DegreeCertificate of a faculty by providing degree name
+             * 1. Convert Designation field of Faculty class from string to enumerator having 
+             * designations: Lecturer, AssistantProfessor, AssociateProfessor, Professor
+             * 2. Convert City field in Address class from string to enumerator having at least 6 Cities
+             * 3. Override ToString methods so that faculty objects display information
+             * 4. Display a list of faculty members working in 'Management Sciences' Department
+             * 5. Display a list of faculty members whose permanent address city is not Islamabad
+             * 6. Implement > operator in Faculty Class based on Designation
+             * 7. Implement indexer to return DegreeCertificate of a faculty by providing degree name
              * Sample usage: facultyObject["PhD"]
             */
 
