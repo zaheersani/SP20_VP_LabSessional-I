@@ -8,11 +8,11 @@ namespace SP20_LabSessional
 {
     class Program
     {
-        static List<Faculty> faculties;
+        static List<Instructor> faculties;
 
         static void Main(string[] args)
         {
-            CreateFacultyObjects();
+            CreateInstructorObjects();
 
             foreach (var item in faculties)
             {
@@ -20,25 +20,25 @@ namespace SP20_LabSessional
             }
 
             /* TODO:
-             * 1. Convert Designation field of Faculty class from string to enumerator having 
-             * designations: Lecturer, AssistantProfessor, AssociateProfessor, Professor
-             * 2. Convert City field in Address class from string to enumerator having at least 6 Cities
-             * 3. Override ToString methods so that faculty objects display information
-             * 4. Display a list of faculty members working in 'Management Sciences' Department
-             * 5. Display a list of faculty members whose permanent address city is not Islamabad
-             * 6. Implement > operator in Faculty Class based on Designation
-             * 7. Implement indexer to return DegreeCertificate of a faculty by providing degree name
-             * Sample usage: facultyObject["PhD"]
+             * 1. Convert Department field of Instructor class from string to enumerator having 
+             * departments: Computer Science, Management Sciences, Electrical Engineering, Mathematics, Physics
+             * 2. Convert Country field in Address class from string to enumerator having at least 7 Countries
+             * 3. Override ToString methods so that Instructor objects display information of Instructor when printing objects
+             * 4. Display a list of Instructors working in 'Management Sciences' Department
+             * 5. Display a list of Instructors whose permanent address city is not Islamabad
+             * 6. Implement > operator in Instructor Class based on Designation
+             * 7. Implement indexer to return DegreeCertificate of Instructor by providing degree name
+             * Sample usage: instructorObject["PhD"]
             */
 
             Console.ReadKey();
         }
 
-        static void CreateFacultyObjects()
+        static void CreateInstructorObjects()
         {
-            faculties = new List<Faculty>()
+            faculties = new List<Instructor>()
             {
-                new Faculty()
+                new Instructor()
                 {
                     Name = "Faculty 1",
                     Department = "Computer Science",
@@ -77,7 +77,7 @@ namespace SP20_LabSessional
                         }
                     }
                 },
-                new Faculty()
+                new Instructor()
                 {
                     Name = "Faculty 2",
                     Department = "Computer Science",

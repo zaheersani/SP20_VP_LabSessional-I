@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP20_LabSessional
 {
-    class Faculty
+    class Instructor
     {
         public string Name { get; set; }
         public string Designation { get; set; }
@@ -18,7 +18,7 @@ namespace SP20_LabSessional
     }
     class CourseAllocation
     {
-        public Faculty Instructor { get; set; }
+        public Instructor Instructor { get; set; }
         public List<Course> Courses { get; set; }
     }
     class DegreeCertificate
