@@ -26,7 +26,7 @@ namespace SP20_LabSessional
              * 3. Override ToString methods so that Instructor objects display information of Instructor when printing objects
              * 4. Display a list of Instructors working in 'Management Sciences' Department
              * 5. Display a list of Instructors whose permanent address city is not Islamabad
-             * 6. Implement > operator in Instructor Class based on Designation
+             * 6. Implement > operator in Instructor Class based on Salary
              * 7. Implement indexer to return DegreeCertificate of Instructor by providing degree name
              * Sample usage: instructorObject["PhD"]
             */
@@ -43,6 +43,7 @@ namespace SP20_LabSessional
                     Name = "Faculty 1",
                     Department = "Computer Science",
                     Designation = "Associate Professor",
+                    Salary = 176000,
                     PresentAddress = new Address()
                     {
                         StreetAddress = "House 88, St 33",
@@ -82,6 +83,7 @@ namespace SP20_LabSessional
                     Name = "Faculty 2",
                     Department = "Computer Science",
                     Designation = "Assitant Professor",
+                    Salary = 120000,
                     PresentAddress = new Address()
                     {
                         StreetAddress = "House 88, St 33",

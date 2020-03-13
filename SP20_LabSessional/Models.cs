@@ -12,6 +12,7 @@ namespace SP20_LabSessional
         public string Designation { get; set; }
         public string Department { get; set; }
         public string ContactNo { get; set; }
+        public int Salary { get; set; }
         public Address PresentAddress { get; set; }
         public Address PermanentAddress { get; set; }
         public List<DegreeCertificate> Degrees { get; set; }
