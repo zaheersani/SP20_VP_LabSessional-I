@@ -14,9 +14,37 @@ namespace SP20_LabSessional
         {
             CreateFacultyObjects();
 
+            //foreach (var item in faculties)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //// Faculty of Management Sciences
+            //foreach (var item in faculties)
+            //{
+            //    if (item.Department == "Management Sciences")
+            //        Console.WriteLine(item);
+            //}
+            // Faculty not from Islamabad
+            //if(faculties[0] > faculties[1])
+            //{
+            //    Console.WriteLine("Faculty 1 is greater");
+            //} else
+            //{
+            //    Console.WriteLine("Faculty 1 is smaller");
+            //}
+            //foreach (var item in faculties)
+            //{
+            //    if (item.PermanentAddress.City != City.Islamabad)
+            //        Console.WriteLine(item);
+            //}
+
             foreach (var item in faculties)
             {
-                Console.WriteLine(item);
+                DegreeCertificate degree = item["MS"];
+                if(degree != null)
+                {
+                    Console.WriteLine(degree);
+                }
             }
 
             /* TODO:
@@ -42,11 +70,18 @@ namespace SP20_LabSessional
                 {
                     Name = "Faculty 1",
                     Department = "Computer Science",
-                    Designation = Designation.AssociateProfessor,
+                    Designation = Designation.Lecturer,
                     PresentAddress = new Address()
                     {
                         StreetAddress = "House 88, St 33",
-                        City = "Islamabad",
+                        City = City.Islamabad,
+                        District = "Federal",
+                        Country = "Pakistan"
+                    },
+                    PermanentAddress = new Address()
+                    {
+                        StreetAddress = "House 88, St 33",
+                        City = City.Islamabad,
                         District = "Federal",
                         Country = "Pakistan"
                     },
@@ -85,8 +120,15 @@ namespace SP20_LabSessional
                     PresentAddress = new Address()
                     {
                         StreetAddress = "House 88, St 33",
-                        City = "Islamabad",
+                        City = City.Islamabad,
                         District = "Federal",
+                        Country = "Pakistan"
+                    },
+                    PermanentAddress = new Address()
+                    {
+                        StreetAddress = "House 88, St 33",
+                        City = City.Lahore,
+                        District = "Punjab",
                         Country = "Pakistan"
                     },
                     ContactNo = "+9234532424242",
