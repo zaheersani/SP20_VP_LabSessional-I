@@ -42,7 +42,7 @@ namespace SP20_LabSessional
                 {
                     Name = "Faculty 1",
                     Department = "Computer Science",
-                    Designation = "Associate Professor",
+                    Designation = Designation.AssociateProfessor,
                     PresentAddress = new Address()
                     {
                         StreetAddress = "House 88, St 33",
@@ -81,7 +81,7 @@ namespace SP20_LabSessional
                 {
                     Name = "Faculty 2",
                     Department = "Computer Science",
-                    Designation = "Assitant Professor",
+                    Designation = Designation.AssistantProfessor,
                     PresentAddress = new Address()
                     {
                         StreetAddress = "House 88, St 33",

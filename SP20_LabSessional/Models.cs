@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace SP20_LabSessional
 {
+    enum Designation { Lecturer, AssistantProfessor, AssociateProfessor, Professor }
     class Faculty
     {
         public string Name { get; set; }
-        public string Designation { get; set; }
+        public Designation Designation { get; set; }
         public string Department { get; set; }
         public string ContactNo { get; set; }
         public Address PresentAddress { get; set; }
